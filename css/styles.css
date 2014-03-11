@@ -36,9 +36,11 @@ h2 + p {
   font-family: "Gafata", serif;
   color: #343434;
   font-size: 19px;
+  margin: 0 20px;
 
 
 }
+
 
 
 /* Gallery Stying */
@@ -70,9 +72,7 @@ h2 + p {
   
 
 }
-.gallery .item img {
 
-  }
 .gallery .controls {
   position: absolute;
   bottom: -100px;
@@ -100,8 +100,77 @@ img {
 }
 
 
-/* Show Grid 
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
+/* Media Queries */
+
+
+@media screen and (max-width: 665px){
+
+.gallery .item {
+  height: 350px;
 }
-*/
+  
+h1 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+
+}
+
+
+}
+
+@media screen and (max-width: 570px){
+
+  .gallery .item {
+  height: 300px;
+  }
+  h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 60px; 
+
+}
+p {
+  margin-bottom: 60px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+h2 {
+
+  font-size: 25px;
+ 
+}
+
+h2 + p {
+ 
+
+  font-size: 15px;
+ 
+
+}
+@media screen and (max-width: 485px){
+
+  .gallery .item {
+  height: 250px;
+  }
+
+}
+@media screen and (max-width: 406px){
+
+ .gallery .controls {
+  
+  bottom: -100px;
+  width: 100%;
+}
+  .gallery .controls img {
+  border: 2px solid rgb(107,184,198);
+  border-radius: 75px;
+  width: 40px;
+  margin: 0 5px;
+}
+  
+
+}
+
+
