@@ -157,6 +157,9 @@ h2 + p {
 
 }
 @media screen and (max-width: 406px){
+  .gallery .item {
+  height: 225px;
+  }
 
  .gallery .controls {
   
